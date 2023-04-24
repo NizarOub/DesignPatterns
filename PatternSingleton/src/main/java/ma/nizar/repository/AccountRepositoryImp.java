@@ -13,14 +13,25 @@ import java.util.function.Predicate;
 
 public class AccountRepositoryImp implements AccountRepository {
 
+    private static final AccountRepositoryImp accountRepositoryImp;
+    static {
+        System.out.println("Instantiation du Singleton");
+        accountRepositoryImp = new AccountRepositoryImp();
+    }
+
+    private AccountRepositoryImp() {}
+
     private Map<Long,BankAccount> bankAccountMap = new HashMap<>();
     private long accountsCount = 0;
 
     @Override
-    public BankAccount save(BankAccount bankAccount) {
-        Long accountId = ++ accountsCount;
-        bankAccount.setAccountId(accountId);
-        bankAccountMap.put(accountId,bankAccount);
+    public synchronized BankAccount save(BankAccount bankAccount) {
+        Long accountId;
+        //synchronized (this){
+            accountId = ++ accountsCount; // Critical zone
+            bankAccount.setAccountId(accountId);
+            bankAccountMap.put(accountId,bankAccount);
+        //}
         return bankAccount;
     }
 
@@ -70,5 +81,21 @@ public class AccountRepositoryImp implements AccountRepository {
                     .build();
             save(account);
         }
+        System.out.println("===========================================");
+        System.out.println(Thread.currentThread().getName());
+        System.out.println("Account Count = " + accountsCount);
+        System.out.println("Size = " + bankAccountMap.values().size());
+        System.out.println("===========================================");
+    }
+
+    public static AccountRepositoryImp getInstance(){
+        /*
+        if (accountRepositoryImp == null){
+            System.out.println("Instantiation du Singleton");
+            accountRepositoryImp = new AccountRepositoryImp();
+            accountRepositoryImp.populateData();
+        }
+         */
+        return accountRepositoryImp;
     }
 }
