@@ -27,11 +27,13 @@ public class Main2 {
 
         System.out.println(account1);
         System.out.println(account3);
+        System.out.println(account4);
 
         account1.getCustomer().setName("Walid");
 
         System.out.println(account1);
         System.out.println(account3);
+
 
 
 

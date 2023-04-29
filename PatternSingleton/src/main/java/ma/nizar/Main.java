@@ -15,6 +15,7 @@ public class Main {
 
         JsonSerializer<BankAccount> banckAccountJsonSerializer = new JsonSerializer<>();
         AccountRepositoryImp accountRepositoryImp = AccountRepositoryImp.getInstance();
+
         for (int i = 0; i < 10; i++) {
             new Thread(() ->{
                 accountRepositoryImp.populateData();

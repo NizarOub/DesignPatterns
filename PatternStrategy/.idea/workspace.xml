@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00c3b84a-32c5-4484-9fd5-3a1df0150c7f" name="Changes" comment="PatternSingleton" />
+    <list default="true" id="00c3b84a-32c5-4484-9fd5-3a1df0150c7f" name="Changes" comment="PatternSingleton">
+      <change beforePath="$PROJECT_DIR$/../PatternPrototype/src/main/java/ma/nizar/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PatternPrototype/src/main/java/ma/nizar/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatternSingleton/src/main/java/ma/nizar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PatternSingleton/src/main/java/ma/nizar/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,11 +24,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -52,6 +56,9 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -92,6 +99,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="PatternStrategy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="PatternStrategy" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,6 +124,10 @@
       <workItem from="1682187913525" duration="197000" />
       <workItem from="1682189103376" duration="2695000" />
       <workItem from="1682280923864" duration="589000" />
+      <workItem from="1682676670443" duration="20000" />
+      <workItem from="1682676699089" duration="22000" />
+      <workItem from="1682676733108" duration="50000" />
+      <workItem from="1682719659967" duration="91000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1682190846852</created>
